@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--<artifact-->
+    <groupId>io.github.ololx.moonshine</groupId>
+    <artifactId>moonshine-examples</artifactId>
+    <version>0.2.3</version>
+    <packaging>jar</packaging>
+    <!--artifact>-->
+
+    <!--<info-->
+    <name>${project.artifactId}</name>
+    <description>
+        This is a repository with the moonshine usage examples.
+        For more details please visit the moonshine repository
+        by the following link - https://github.com/ololx/moonshine
+    </description>
+    <url>https://ololx.github.io/moonshine-examples</url>
+    <inceptionYear>2023</inceptionYear>
+    <licenses>
+        <license>
+            <name>The Unlicense</name>
+            <url>https://unlicense.org</url>
+            <distribution>repo</distribution>
+            <comments/>
+        </license>
+    </licenses>
+    <!--info>-->
+
+    <!--<developers and contributors-->
+    <developers>
+        <developer>
+            <id>ololx</id>
+            <name>Alexander A. Kropotin</name>
+            <email>ololx@icloud.com</email>
+            <roles>
+                <role>author</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+    <!--developers and contributors>-->
+
+    <!--<ci info-->
+    <scm>
+        <connection>scm:git:git://github.com/ololx/moonshine-examples</connection>
+        <developerConnection>scm:git:ssh://github.com/ololx/moonshine-examples</developerConnection>
+        <url>http://github.com/ololx/moonshine-examples</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/ololx/moonshine-examples/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Github Actions</system>
+        <url>https://github.com/ololx/moonshine-examples/actions</url>
+        <notifiers>
+            <notifier>
+                <type>mail</type>
+                <sendOnError>true</sendOnError>
+                <sendOnFailure>true</sendOnFailure>
+                <sendOnSuccess>true</sendOnSuccess>
+                <sendOnWarning>true</sendOnWarning>
+                <address>ololx@icloud.com</address>
+            </notifier>
+        </notifiers>
+    </ciManagement>
+    <!--ci info>-->
+
+    <!--<distribution-->
+    <distributionManagement>
+        <repository>
+            <id>moonshine-staging</id>
+            <name>Sonatype Nexus Staging Repository</name>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+        <snapshotRepository>
+            <id>moonshine-snapshots</id>
+            <name>Sonatype Nexus Snapshots Repository</name>
+            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <!--distribution>-->
+
+    <!--<properties-->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <!--properties>-->
+
+    <!--<dependencies-->
+    <dependencies>
+        <!--<moonshine modules-->
+        <dependency>
+            <groupId>io.github.ololx.moonshine</groupId>
+            <artifactId>moonshine-tuple</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.ololx.moonshine</groupId>
+            <artifactId>moonshine-stopwatch</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!--moonshine modules>-->
+    </dependencies>
+    <!--dependencies>-->
+
+</project>
