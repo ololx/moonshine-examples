@@ -7,7 +7,7 @@
     <!--<artifact-->
     <groupId>io.github.ololx.moonshine</groupId>
     <artifactId>moonshine-examples</artifactId>
-    <version>0.2.3</version>
+    <version>0.5.0</version>
     <packaging>jar</packaging>
     <!--artifact>-->
 
@@ -104,6 +104,11 @@
         <dependency>
             <groupId>io.github.ololx.moonshine</groupId>
             <artifactId>moonshine-stopwatch</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.ololx.moonshine</groupId>
+            <artifactId>moonshine-bytes</artifactId>
             <version>${project.version}</version>
         </dependency>
         <!--moonshine modules>-->
