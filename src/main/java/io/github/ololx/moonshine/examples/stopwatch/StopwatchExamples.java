@@ -23,10 +23,8 @@ public final class StopwatchExamples {
     void exampleOfMeasuringWholeMethodExecutionTime() throws InterruptedException {
         // create and start new stopwatch
         Stopwatch stopwatch = new SimpleStopwatch().start();
-
         // do something
         doSomething();
-
         // get elapsed time of whole method execution and log it
         log.info("Finished the numbers multiplication. Spent time = " + stopwatch.elapsed());
     }
@@ -34,13 +32,10 @@ public final class StopwatchExamples {
     void exampleOfMeasuringSummaryTimeExecutionOfMethodParts() throws InterruptedException {
         // create new stopwatch
         Stopwatch stopwatch = new SimpleStopwatch().start();
-
         // start stopwatch
         stopwatch.start();
-
         // do something
         doSomething();
-
         // stop stopwatch
         stopwatch.stop();
 
@@ -49,10 +44,8 @@ public final class StopwatchExamples {
 
         // start stopwatch again
         stopwatch.start();
-
         // do something
         doSomething();
-
         // stop stopwatch and get elapsed time of the nums multiplication and dividing, and log it
         log.info(
                 "Finished the numbers multiplication and dividing. Spent time = "
